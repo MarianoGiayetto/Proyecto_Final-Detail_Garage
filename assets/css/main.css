@@ -1,0 +1,291 @@
+@charset "UTF-8";
+/*Variables*/
+/*Colores*/
+/*Fondos*/
+/*Fuentes*/
+/*Espaciado*/
+/*Tamaño Fuentes*/
+/*Estilos Globales*/
+@import url("https://fonts.googleapis.com/css2?family=Anek+Latin:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+a {
+  text-decoration: none;
+  color: #14213d; }
+
+ul {
+  list-style-type: none; }
+
+body {
+  font-family: "Anek", sans-serif; }
+
+img {
+  width: 100%; }
+
+main {
+  background: linear-gradient(to bottom, #abbaab, #ffffff); }
+
+/*Estilos Header*/
+header {
+  border-bottom: 2px solid #fb3640;
+  background: linear-gradient(to bottom, #ada996, #f2f2f2, #dbdbdb 85%, #eaeaea); }
+
+.img__logo {
+  height: 170px;
+  width: auto; }
+
+.nav-link {
+  font-size: 1.6em; }
+  .nav-link:after {
+    content: "";
+    display: block;
+    max-width: 100%;
+    height: 2px;
+    background-color: black;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out; }
+  .nav-link:hover:after {
+    transform: scaleX(1);
+    border-bottom: 1px solid black; }
+
+@media screen and (max-width: 992px) {
+  .img__logo {
+    height: 130px;
+    width: auto; } }
+
+/*Estilos Index*/
+.carousel-caption {
+  bottom: 2rem;
+  z-index: 10; }
+
+.carousel-item {
+  max-height: 40rem; }
+  .carousel-item img {
+    max-height: 50rem;
+    overflow: hidden; }
+
+.tarjetas {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap; }
+
+.box {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: 1 1 clamp(300px, 30%, 400px); }
+  .box__info {
+    display: flex;
+    flex-direction: column;
+    padding: 2.4rem;
+    text-align: center; }
+  .box__img {
+    opacity: 0.5;
+    transition: all 1s ease-in-out; }
+    .box__img:hover {
+      opacity: 1;
+      transform: scale(1.1); }
+
+.galeria__img {
+  transition: all 0.5s ease-in-out; }
+  .galeria__img:hover {
+    cursor: pointer;
+    transform: scale(1.03); }
+  .galeria__img__expand {
+    width: 100%; }
+
+.delete-border {
+  border: none; }
+
+@media screen and (max-width: 570px) {
+  .tarjetas {
+    padding: 1rem; } }
+
+@media screen and (max-width: 480px) {
+  .tarjetas {
+    padding: 2rem; } }
+
+/*Estilos Footer*/
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 0;
+  flex-wrap: wrap; }
+
+.footer__logo {
+  max-width: 120px; }
+
+.footer__imagenes {
+  display: flex;
+  align-items: center;
+  gap: 1rem; }
+
+.footer__menu {
+  display: flex;
+  gap: 1rem; }
+  .footer__menu__link, .footer__menu__active {
+    font-size: 1.6em;
+    padding: 1rem;
+    transition: all 1s; }
+    .footer__menu__link:hover, .footer__menu__active:hover {
+      color: #fb3640; }
+  .footer__menu__active {
+    color: #fb3640; }
+
+.footer__redes:hover {
+  animation: move 1s ease infinite;
+  cursor: pointer; }
+
+@keyframes move {
+  30% {
+    transform: scale(1.2); }
+  40% {
+    transform: rotate(-20deg) scale(1.2); }
+  60% {
+    transform: rotate(-20deg) scale(1.2); }
+  50% {
+    transform: rotate(20deg) scale(1.2); }
+  70% {
+    transform: rotate(0deg) scale(1.2); }
+  100% {
+    transform: scale(1); } }
+
+@media screen and (max-width: 892px) {
+  footer {
+    flex-direction: column; }
+  .footer__menu {
+    flex-direction: column;
+    align-items: center; } }
+
+/*Estilos Servicios*/
+.servicios__titulo {
+  color: #29274c;
+  padding: 6rem;
+  text-align: center;
+  font-family: "Kanit", sans-serif; }
+
+.box__img__servicios {
+  opacity: 0.5;
+  transition: all 1s ease-in-out; }
+  .box__img__servicios:hover {
+    opacity: 1;
+    transform: scale(1.1); }
+
+.marcas {
+  padding: 2.4rem; }
+  .marcas__titulo {
+    font-family: "Kanit", sans-serif;
+    color: #29274c; }
+  .marcas__logos {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2.4rem;
+    flex-wrap: wrap;
+    padding: 2rem; }
+    .marcas__logos__img {
+      width: 110px;
+      height: 50px;
+      transition: all 0.5s ease-in-out; }
+      .marcas__logos__img:hover {
+        cursor: pointer;
+        transform: scale(1.1); }
+
+/*Estilos Galeria*/
+.seccion__galeria__titulo {
+  color: #29274c;
+  padding: 6rem;
+  text-align: center;
+  font-family: "Kanit", sans-serif; }
+
+.seccion__galeria__imagen {
+  opacity: 0.5;
+  transition: all 0.5s ease-in-out; }
+  .seccion__galeria__imagen:hover {
+    opacity: 1;
+    cursor: pointer; }
+
+/*Estilos Acerca de Nosotros */
+.nosotros {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6rem; }
+
+.titulo__nosotros {
+  color: #29274c;
+  font-family: "Kanit", sans-serif; }
+
+.texto__nosotros {
+  font-size: 1.6em;
+  font-family: "Anek", sans-serif;
+  text-align: center;
+  color: #14213d;
+  padding: 1rem; }
+
+.nosotros__tarjeta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px; }
+  .nosotros__tarjeta__texto {
+    font-size: 1.6em;
+    text-align: center;
+    margin: 20px;
+    font-family: "Anek", sans-serif; }
+  .nosotros__tarjeta__imagen {
+    width: 50%;
+    height: auto;
+    opacity: 0.7;
+    transition: all 0.5s ease-in-out; }
+    .nosotros__tarjeta__imagen:hover {
+      opacity: 1;
+      cursor: pointer; }
+
+/*Estilos Contacto*/
+.contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6rem; }
+  .contacto__titulo {
+    color: #29274c;
+    font-family: "Kanit", sans-serif; }
+
+.titulo__etiqueta__formulario {
+  font-size: 1.6em; }
+
+.ubicacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #003049; }
+  .ubicacion__texto {
+    color: #29274c;
+    font-size: 2.2em;
+    text-align: center;
+    margin: 2.4rem; }
+  .ubicacion__direccion {
+    color: #29274c;
+    font-size: 2.2em;
+    padding: 2rem;
+    text-align: justify; }
+
+@media screen and (max-width: 480px) {
+  .titulo__etiqueta__formulario {
+    font-size: 1.4em; }
+  .ubicacion__texto {
+    font-size: 1.4em; }
+  .ubicacion__direccion {
+    font-size: 1.4em; }
+  .texto__nosotros {
+    font-size: 1.4em; } }

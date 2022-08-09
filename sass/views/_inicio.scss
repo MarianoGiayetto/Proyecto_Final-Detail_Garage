@@ -1,0 +1,65 @@
+/*Estilos Index*/
+.carousel-caption {
+    bottom: 2rem;
+    z-index: 10;
+}
+
+.carousel-item {
+    max-height: 40rem;
+    img {
+        max-height: 50rem;
+        overflow: hidden;
+    }
+}
+
+.tarjetas{
+    @include flex (null,center,null);
+    gap: $spacing-xsmall;
+    flex-wrap: wrap;           
+}
+
+.box{
+    @include flex (column,null,null);
+    gap: $spacing-xsmall;
+    flex: 1 1 clamp(300px, 30%, 400px);
+    &__info{
+        @include flex(column,null,null);
+        padding: $spacing-medium;
+        text-align: center;
+    }
+    &__img{
+        opacity: 0.5;
+        transition: all 1s ease-in-out;
+        &:hover{
+            opacity: 1;
+            transform: scale(1.1);
+        }
+    }
+}
+
+.galeria__img{
+    transition: all 0.5s ease-in-out;
+    &:hover{
+        cursor:pointer;
+        transform: scale(1.03);
+    }
+    &__expand{
+        width: 100%;
+    }
+}
+
+.delete-border{
+    border: none;    
+}
+
+@media screen and (max-width:570px){
+    .tarjetas{
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width:480px){
+    .tarjetas{
+        padding: 2rem;  
+    } 
+}

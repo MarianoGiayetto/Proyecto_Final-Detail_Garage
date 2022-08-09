@@ -1,0 +1,45 @@
+/*Estilos Contacto*/
+.contacto{
+    @include flex (column,null,center);
+    padding: $spacing-large;
+    &__titulo{
+        color: map-get($colores,primary);
+        font-family: $font-titulo;
+    }
+}
+
+.titulo__etiqueta__formulario{
+    font-size: $text-base;    
+}
+
+.ubicacion{
+    @include flex(column,null,center);
+    color: map-get($colores,alternative);
+    &__texto{
+        color: map-get($colores,primary);
+        font-size: $text-medium;
+        text-align: center;
+        margin: $spacing-medium;
+    } 
+    &__direccion{
+        color: map-get($colores,primary);
+        font-size: $text-medium;
+        padding: $spacing-small;
+        text-align: justify;
+    }  
+}
+
+@media screen and (max-width:480px) {
+    .titulo__etiqueta__formulario{
+        font-size: $text-small;
+    }
+    .ubicacion__texto{
+        font-size: $text-small;
+    }
+    .ubicacion__direccion{
+        font-size: $text-small;
+    }   
+    .texto__nosotros{
+        font-size: $text-small;           
+    }
+}

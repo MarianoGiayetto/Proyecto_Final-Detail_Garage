@@ -1,0 +1,16 @@
+/*Estilos Galeria*/
+.seccion__galeria__titulo {
+    color:map-get($colores,primary);
+    padding: $spacing-large;
+    text-align: center;
+    font-family: $font-titulo;
+}
+
+.seccion__galeria__imagen{
+    opacity: 0.5;
+    transition: all 0.5s ease-in-out;
+    &:hover{
+        opacity: 1;
+        cursor:pointer;  
+    }
+}

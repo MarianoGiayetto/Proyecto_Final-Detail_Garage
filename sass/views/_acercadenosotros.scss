@@ -1,0 +1,38 @@
+/*Estilos Acerca de Nosotros */
+.nosotros{
+    @include flex(column,null,center);
+    padding: $spacing-large;
+}
+.titulo__nosotros{
+    color: map-get($colores,primary);
+    font-family: $font-titulo;    
+}
+
+.texto__nosotros{
+    font-size: $text-base;
+    font-family: $font-principal;
+    text-align:center;
+    color: map-get($colores,text-color);
+    padding: $spacing-xsmall;   
+}
+
+.nosotros__tarjeta{
+    @include flex (null,center,center);   
+    margin: 20px;
+    &__texto{
+        font-size: $text-base;
+        text-align: center;  
+        margin:20px;
+        font-family: $font-principal;
+    }
+    &__imagen{
+        width: 50%;
+        height: auto;
+        opacity: 0.7;
+        transition: all 0.5s ease-in-out;
+        &:hover{
+            opacity: 1;
+            cursor:pointer;  
+        }
+    }
+ }
