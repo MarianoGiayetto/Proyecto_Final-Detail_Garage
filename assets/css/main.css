@@ -139,7 +139,7 @@ footer {
     .footer__menu__link:hover, .footer__menu__active:hover {
       color: #fb3640; }
   .footer__menu__active {
-    color: #fb3640; }
+    color: #003049; }
 
 .footer__redes:hover {
   animation: move 1s ease infinite;

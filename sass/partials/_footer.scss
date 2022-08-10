@@ -27,7 +27,7 @@ footer{
     }
     &__active{
         @extend .footer__menu__link;
-        color: map-get($colores,secondary);
+        color: map-get($colores,alternative);
     }
 }
 .footer__redes:hover{
