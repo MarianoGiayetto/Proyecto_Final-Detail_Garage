@@ -1,16 +1,15 @@
 {
-  "name": "proyecto_actualizado_sass",
+  "name": "detail_garage",
   "version": "1.0.0",
+  "description": "sitio para taller de detailing Detail Garage",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-css": "node-sass --include-path scss sass/index.scss ./assets/css/main.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
-  "keywords": [],
-  "author": "",
+  "author": "Mariano Giayetto",
   "license": "ISC",
-  "description": "",
   "devDependencies": {
     "node-sass": "^7.0.1",
     "nodemon": "^2.0.19"
