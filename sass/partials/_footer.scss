@@ -1,6 +1,6 @@
 /*Estilos Footer*/
 footer{
-    @include flex(null,space-around,center);
+    @include flex(null,center,center);
     padding: $spacing-xsmall 0;  
     flex-wrap:wrap;        
 }

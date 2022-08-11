@@ -30,7 +30,7 @@ img {
   width: 100%; }
 
 main {
-  background: linear-gradient(to bottom, #abbaab, #ffffff); }
+  background: linear-gradient(to bottom, #96A6AD, #ffffff); }
 
 /*Estilos Header*/
 header {
@@ -116,7 +116,7 @@ header {
 /*Estilos Footer*/
 footer {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   padding: 1rem 0;
   flex-wrap: wrap; }
